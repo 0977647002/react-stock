@@ -1,0 +1,230 @@
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    z-index: 2;
+    background-color: rgb(32, 35, 42);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+}
+
+.navbar-conten {
+    max-width: 1200px;
+    height: 60px;
+}
+
+.navbar-conten a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar-conten a.navbar-conten-icon {
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto 20px;
+    color: #ffffff;
+    transition: font-size 0.2s;
+    padding-top: 10px;
+}
+
+.navbar-conten a.navbar-conten-icon:hover {
+    font-size: 33px;
+}
+
+.navbar-conten a.navbar-conten-icon h2 {
+    margin: 12px 10px;
+}
+
+.navbar-conten a.navbar-conten-item {
+    float: right;
+    color: rgb(201, 197, 197);
+    padding: 18px;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+.navbar-conten a.navbar-conten-item:hover {
+    color: rgb(248, 247, 247);
+}
+
+.menu {
+    top: 60px;
+    z-index: 1;
+    max-height: calc(100% - 50%);
+    overflow-y: auto;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 22%;
+    text-align: left;
+    background-color: rgb(247, 247, 247);
+    margin-right: -12px;
+    padding-bottom: 100px;
+}
+
+.menu a.menu-item {
+    max-width: 70%;
+    font-size: 20px;
+    margin: 10px;
+    padding-bottom: 10px;
+    margin-left: 50px;
+    border-bottom: 1px black solid;
+    display: block;
+    text-decoration: none;
+    color: darkgray;
+    transition: color 0.1s;
+    cursor: pointer;
+}
+
+.menu a.menu-item:hover {
+    color: black;
+}
+
+.menu a.menu-item.active {
+    color: black;
+}
+
+.conten {
+    position: absolute;
+    top: 60px;
+    left: 23%;
+    width: 74% !important;
+    background: white;
+}
+
+.conten-detail .item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.conten-title {
+    text-align: center;
+    height: 60px;
+}
+
+.conten-title h1 {
+    max-width: 80%;
+    margin: 15px auto;
+    padding-bottom: 5px;
+    border-bottom: 1px black solid;
+}
+
+.item-detail {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    transition: all 0.2s;
+}
+
+.item-detail h3 {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.item-detail p {
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.item-detail input {
+    width: 90%;
+    margin: 10px 0;
+    padding: 7px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn-delete {
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    color: red;
+    transition: all 0.2s;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+}
+
+.btn-delete:hover {
+    font-size: 25px;
+    right: -10px;
+    top: -10px;
+}
+
+.btn-add {
+    font-size: 50px;
+    border: none;
+    background: none;
+    color: rgb(24, 119, 242);
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    display: none;
+    transition: all 0.2s;
+}
+
+.btn-add:hover {
+    font-size: 70px;
+    top: 36%;
+    left: 36%;
+}
+
+.item-detail:hover .btn-add {
+    display: block;
+}
+
+.item-detail:hover {
+    opacity: 0.8;
+}
+
+.item-detail-image {
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px black solid;
+}
+
+.conten-footer {
+    background-color: rgb(32, 35, 42);
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+    color: #ffffff;
+}
+
+.conten-footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.search {
+    width: 70%;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.search:focus {
+    margin: 6px auto;
+    padding: 12px;
+}

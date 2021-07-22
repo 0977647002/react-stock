@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 242, 245);
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    margin: 100px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.title {
+    padding: 20px;
+}
+
+.password {
+    width: 70%;
+    margin: auto;
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.password:focus {
+    margin: 8px auto;
+    padding: 17px;
+    border-inline: 3px black solid;
+    outline: none;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 10px;
+    background-color: blue;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(77, 166, 255);
+}
+
+.info {
+    box-sizing: content-box;
+    display: inline;
+    float: right;
+    margin-top: 20px;
+}
+
+.login-registration {
+    box-sizing: content-box;
+    min-width: 100px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: darkgray;
+    padding-left: 350px;
+}
+
+.login-registration:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.message {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(255, 179, 179);
+    border: 1px red solid;
+    border-radius: 5pc;
+}
