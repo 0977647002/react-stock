@@ -58,9 +58,21 @@ body {
 
 .info {
     box-sizing: content-box;
-    display: inline;
-    float: right;
     margin-top: 20px;
+    padding-left: 350px;
+}
+
+.info a {
+    box-sizing: content-box;
+    min-width: 100px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: darkgray;
+}
+
+.info a:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 .login-registration {
