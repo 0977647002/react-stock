@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
+
 * {
+    font-family: "Alegreya", serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,7 +14,8 @@ body {
 .container {
     width: 500px;
     height: auto;
-    margin: 100px auto;
+    margin: 200px auto;
+    border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: white;
     text-align: center;
@@ -23,56 +27,36 @@ body {
 }
 
 .password {
-    width: 70%;
+    width: 60%;
     margin: auto;
     display: block;
-    margin: 10px auto;
-    padding: 15px;
+    margin: 15px auto;
+    padding: 10px;
     border: 1px black solid;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .password:focus {
-    margin: 8px auto;
-    padding: 17px;
-    border-inline: 3px black solid;
     outline: none;
+    background-color: rgba(240, 239, 240, 1);
 }
 
 .button {
-    width: 100px;
+    min-width: 100px;
     height: 40px;
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 10px;
-    background-color: blue;
-    border-radius: 15px;
+    background-color: rgb(77, 166, 255);
+    border-radius: 7px;
     border: none;
-    color: white;
+    color: black;
     box-sizing: content-box;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .button:hover {
-    background-color: rgb(77, 166, 255);
-}
-
-.info {
-    box-sizing: content-box;
-    margin-top: 20px;
-    padding-left: 350px;
-}
-
-.info a {
-    box-sizing: content-box;
-    min-width: 100px;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: darkgray;
-}
-
-.info a:hover {
-    color: black;
-    text-decoration: underline;
+    background-color: blue;
 }
 
 .login-registration {
@@ -81,7 +65,8 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     color: darkgray;
-    padding-left: 350px;
+    margin-left: 350px;
+    transition: all 0.5s;
 }
 
 .login-registration:hover {

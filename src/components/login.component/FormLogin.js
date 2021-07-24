@@ -36,16 +36,18 @@ export default function FormLogin(props) {
                     <form action="#" method="#">
                         <h2 className="title">Welcome to webside!!!</h2>
                         <Message message={message}></Message>
-                        <p>Username:</p>
                         <input
                             type="text"
+                            name="email"
+                            id="email"
+                            placeholder="Usename"
                             className="password"
                             onChange={getUsename}
                         />
-                        <p>Password:</p>
                         <input
                             type="password"
                             className="password"
+                            placeholder="Password"
                             onChange={getPassword}
                         />
                         <button
