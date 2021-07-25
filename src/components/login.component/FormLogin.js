@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./templet/Login.css";
-import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { login } from "../../store/getAction";
 import Message from "./Message";
@@ -28,7 +27,7 @@ export default function FormLogin(props) {
             setMessage("Login fail !!!");
         }
     };
-
+    
     return (
         <>
             <div className="container">
